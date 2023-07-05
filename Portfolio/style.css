@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', serif;
+}
+.home--section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, black 70%,rgb(220, 80, 255) 30%);
+}
+#navbar{
+    background: linear-gradient(90deg, black 70%,rgb(220, 80, 255) 30%);
+}
+#logo{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(220, 80, 255);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+margin-left: 50px;
+margin-top: 6px;
+}
+.nav-item .nav-link{
+    margin-left: 10px;
+    font-weight: bold;
+    color: antiquewhite;
+    font-family: 16px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    color: rgb(220, 80, 255);
+}
+#btncv{
+    background: transparent;
+    border: 2px solid black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:991px) {
+    #btncv{
+        border: 2px solid rgb(220, 80, 255);
+        color: rgb(220, 80, 255);
+        margin-left: 20px;
+}
+}
+
+.home{
+    width: 100%;
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   position: relative;
+   z-index: 0;
+}
+
+.home .img{
+    flex: 1 1 400px;
+}
+
+.home .img img{
+    width: 76%;
+    margin-left: 30px;
+}
+
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 45px;
+}
+
+.home .content h5{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.home .content h3{
+    font-size: 50px;
+    color: white;
+}
+
+.home .content h3 span{
+    color: rgb(220, 80, 255);
+    font-weight: bold;
+}
+.changecontent::after{
+    content: "";
+    color: rgb(220, 80, 255);
+    font-weight: bold;
+    font-size: 40px;
+    animation: changetext 20s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"Web Designer";}
+    10%{content:"Mobile App Developer";}
+    20%{content:"Graphic Designer";}
+    30%{content:"YouTuber";}
+    40%{content:"Bootstrap Web Designer";}
+    50%{content:"Developer";}
+}
+.home .content p{
+    color: rgb(6, 6, 6);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#btn1{
+    width: 150px;
+    height: 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: rgb(220, 80, 255);
+    border: 2px solid  rgb(220, 80, 255);
+    background: transparent;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color: rgb(220, 80, 255);
+    color: black;
+}
+@media screen and (max-width:844px) {
+    .home-section{
+        height: 146vh;
+        background: black;
+    }
+    .home .content{
+        margin-top: 50px;
+    }
+    #navbar{
+        background: black;
+    }
+}
+@media screen and (max-width:650px) {
+    .home-section{
+        height: 130vh;
+}
+    .img img{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:360px) {
+    .home-section{
+        height: 110vh;
+}
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#about .card img{
+    background-color: rgb(220, 80, 255);
+    border: 2px solid black;
+}
+#about h3{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(220, 80, 255);
+    width: 150px;
+}
+#about h5{
+    color: white;
+    font-weight: bold;
+}
+#about p{
+    color: white;
+    font-size: 15px;
+}
+#about h2{
+    color: rgb(220, 80, 255);
+    font-size: 17px;
+}
+#about h2 span{
+    font-size: 15px;
+    color: rgb(220, 80, 255);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#btncv2{
+    width: 160px;
+    height: 38px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btncv2:hover{
+    background-color: rgb(220, 80, 255);
+}
+@media screen and (max-width:987px) {
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    #about {
+        height: 150vh;
+    }
+    #about p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:500px) {
+    #about {
+       height:120vh ;
+    }
+}
+
+
+
+#services{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#services h3{
+    width: 130px;
+    padding-top: 130px;
+    color: white;
+    border-bottom: 2px solid rgb(220, 80, 255);
+}
+#services .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#services .card:hover{
+    background-color: rgb(220, 80, 255);
+}
+#services p{
+    color: white;
+}
+#services .card i{
+    font-size: 42px;
+    margin-left: 10px;
+}
+#services .card h2{
+    font-size: 22px;
+    margin-left: 10px;
+}
+@media screen and (max-width:767px) {
+    #services{
+        height: 200vh;
+    }
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    color: rgb(220, 80, 255);
+}
+
+
+#resume{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#resume h5{
+    color: rgb(220, 80, 255);
+    padding-top: 50px;
+}
+#resume h1{
+    color: white;
+}
+#resume h2 i{
+    color: rgb(220, 80, 255);
+}
+#resume h2{
+    color: white;
+    width: 170%;
+    margin-top: 30px;
+}
+#resume h3 i{
+    color: rgb(220, 80, 255);
+}
+#resume h3{
+    color: white;
+    width: 170%;
+    margin-top: 30px;
+}
+#resume p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#resume i{
+    color: rgb(220, 80, 255);
+}
+
+@media screen and(max-width:767px) {
+    #resume{
+        height: 150vh;
+    }
+    }
+
+
+#portfolio{
+        width: 100%;
+        height: 100vh;
+        background-color:white;
+    }
+#portfolio h1{
+    color: white;
+    padding-top: px;
+}
+#portfolio p{
+    color: black;
+}
+#portfolio .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#portfolio .card:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width:770px) {
+    #portfolio{
+        height: 320vh;
+    }
+}
+@media screen and (max-width:460px) {
+    #portfolio{
+        width: 255px;
+        height: 230vh;
+    }
+}
+@media screen and (max-width:380px) {
+    #portfolio{
+        height: 270vh;
+    }
+}
+@media screen and (max-width:312px) {
+    #portfolio{
+        height: 200vh;
+    }
+}
+@media screen and (max-width:312px) {
+    #portfolio{
+        height: 200vh;
+    }
+}
+@media screen and (max-width:300px) {
+    #portfolio{
+        height: 170vh;
+    }
+}
+@media screen and (max-width:280px) {
+    #portfolio h1{
+        padding-top: 100px;
+    }
+}
+
+
+
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#contact h1{
+    color: white;
+    border-bottom: 2px solid rgb(220, 80, 255);
+    width: 210px;
+    padding-top: 100px;
+}
+#contact p{
+    color: white;
+}
+#contact input{
+    width: 420px;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(220, 80, 255);
+}
+#contact ::placeholder{
+    color: white;
+}
+#contact textarea{
+    background: transparent;
+    border: 2px solid rgb(220, 80, 255);
+    margin-top: 20px;
+    color: white;
+}
+#btncontact{
+    width: 420px;
+    height: 38px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    color: rgb(220, 80, 255);
+    border: 2px solid rgb(220, 80, 255);
+    margin-top: 30px;
+}
+#contact i{
+    color: rgb(220, 80, 255);
+    margin-top: 30px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+.social-links i{
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width: 995px) {
+    #contact input{
+        width: 350px;
+    }
+    #contact textarea{
+        width: 350px;
+    }
+    #contact #btncontact{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 376px) {
+    #contact input{
+        width: 300px;
+    }
+    #contact textarea{
+        width: 300px;
+    }
+    #contact #btncontact{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #contact input{
+        width: 180px;
+    }
+    #contact textarea{
+        width: 180px;
+    }
+    #contact #btncontact{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 767px){
+    #contact{
+        height: 150vh;
+    }
+}
+
+
+#footer{
+    width: 100%;
+    background-color: rgb(220, 80, 255);
+}
+#footerh1{
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+    text-shadow: 0px 1px 1px;
+}
+.icons i{
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+.credit{
+    color: white;
+    text-shadow: 0px 0px 0px black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    border-radius: 50px;
+    color: white;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 50px;
+}
+.arrow:hover{
+    color: white;
+}
